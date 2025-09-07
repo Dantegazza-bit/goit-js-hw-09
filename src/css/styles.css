@@ -130,3 +130,43 @@ body {
 .gallery-image:hover {
   transform: scale(1.05);
 }
+
+/* Контейнер галереї */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px; /* Відстань між картками */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* Центрування галереї */
+}
+
+/* Кожен елемент галереї */
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+/* Посилання на зображення */
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Зображення */
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+/* Ефект при наведенні */
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
