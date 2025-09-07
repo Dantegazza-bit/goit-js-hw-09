@@ -1,6 +1,7 @@
 // Імпорт бібліотеки (як вказано в ТЗ)
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import '../css/styles.css';
 
 // Дані зображень
 const images = [
